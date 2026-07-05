@@ -520,7 +520,7 @@ section{ padding: 100px 28px; }
   display:grid;
   grid-template-columns: 380px 1fr;
   gap: 72px;
-  align-items:center;
+  align-items:start;
 }
 
 .about-photos{
@@ -579,6 +579,17 @@ section{ padding: 100px 28px; }
   border-radius: 999px;
   color: var(--navy-950);
 }
+
+.about-commitment{
+  margin: 32px 0 0;
+  padding: 26px 28px;
+  border-left: 3px solid var(--gold);
+  background: rgba(184,134,58,0.06);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+.about-commitment .eyebrow{ margin-bottom: 0.6em; }
+.about-commitment p:not(.eyebrow){ font-size: 0.94rem; margin-bottom: 0.9em; }
+.about-commitment p:last-child{ margin-bottom: 0; }
 
 @media (max-width: 800px){
   .about-card{ grid-template-columns: 1fr; text-align:left; gap: 40px; }
